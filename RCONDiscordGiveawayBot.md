@@ -2,7 +2,7 @@
 title: RCON Discord Giveaway Bot
 description: 
 published: true
-date: 2025-03-24T03:31:43.076Z
+date: 2025-03-24T03:32:40.321Z
 tags: 
 editor: markdown
 dateCreated: 2025-03-24T02:55:47.964Z
@@ -126,6 +126,9 @@ The `Weights` are pretty easy too, the higher the number the more chance of it b
 ## `./giveaways/*.json`
 
 The reason it's `*.json` is because there can be an infinite number of combinations of giveaways you can put together. The file name is the `giveaway_id` for the `/giveaway start` command mentioned earlier.
+
+It is suggested to have at least 15-20 different types of giveaways so that it doesn't choose the same giveaway again.
+
 
 ```json
 {
