@@ -2,7 +2,7 @@
 title: RCON Discord Giveaway Bot
 description: 
 published: true
-date: 2025-03-24T03:03:16.329Z
+date: 2025-03-24T03:15:11.573Z
 tags: 
 editor: markdown
 dateCreated: 2025-03-24T02:55:47.964Z
@@ -74,3 +74,82 @@ The configuration files are a little bit confusing I will admit, however I will 
     }
 }
 ```
+Some of these things are pretty obvious. Bot token, bot name, api keys, etc. Some of the things that aren't obvious are:
+
+`Dev Guild ID` - This variable is mandatory **IF** `Sync Commands Globally` is `false`.
+The variable will essentially "spawn" the bots slash commands in that guild. This is **ONLY** recommended for development. Setting it up this way and doing it live can result in unintended consequences. So, make sure that `Sync Commands Globally` is set to `true`, and you should (if you don't have a testing server) put your live discord server's guild ID in this field.
+
+***TL;DR***
+
+Set this to your testing discord's guild ID, or your main discord's guild id. Leave `Sync Commands Globally` alone. Change to `true` if needed.
+
+## `./configs/scheduler.json`
+```json
+{
+    "Schedules": [
+        {
+            "Hours In Between Giveaways": 0.05,
+            "Winners Chosen Per Giveaway": 1,
+            "Weights": {
+                "100": [
+                    "bronze",
+                    "shop-cash-1",
+                    "skill-tree-xp1",
+                    "better-build"
+                ],
+                "75": [
+                    "silver",
+                    "shop-cash-2",
+                    "skill-tree-xp2"
+                ],
+                "50": [
+                    "gold",
+                    "shop-cash-3",
+                    "skill-tree-xp3"
+                ],
+                "25": [
+                    "diamond"
+                ],
+                "10": [
+                    "platinum"
+                ]
+            },
+            "Last Schedule Run (DO NOT TOUCH)": 123456789
+        }
+    ]
+}
+```
+Alot of this is pretty self-explanitory as well. The `Weights` are pretty easy too, the higher the number the more chance of it being chosen, lower number lower chance. Easy right?
+## `./giveaways/*.json`
+
+The reason it's `*.json` is because there can be an infinite number of combinations of giveaways you can put together. The file name is the `giveaway_id` for the `/giveaway start` command mentioned earlier.
+```json
+{
+    "Giveaway ID (DO NOT EDIT!)": "test",
+    "Giveaway Enabled?": true,
+    "Commands To Run": [
+        "say Bot made by BippyMiester.dev"
+    ],
+    "Giveaway Length (Hours)": 0.05,
+    "Number of Winners": 1,
+    "Randomizer": 1.0,
+    "Weight": 5.0,
+    "Role To Tag On Start": 679128978534957096,
+    "Embed": {
+        "Title": "Test Giveaway",
+        "Description": "*\"Whoa, hold up! This giveaways giving away… NOTHING! Thats right, zilch, zip, nada! But dont freak out, its just a test to keep the bot in tip-top shape! Think of it as a *totally tubular* tech workout. Youve got 1 hour to enter, but heres the kicker—its a ticket burner! Once you enter, those tickets are gone like last weeks mix tape. So if youre not down to say goodbye to those bad boys, no worries—just skip it! But hey, bot data doesnt gather itself, so thanks for helping out, tech warriors!\"*",
+        "Embed Color": "#ff0000",
+        "Conditions": [
+            "You must have at least 1 Ticket",
+            "You must have linked your Discord and Steam Accounts",
+            "You must be an active member in the community"
+        ],
+        "Small Icon": "https://i.imgur.com/HL8Qebp.png",
+        "Large Icon": "https://i.imgur.com/SYnEa2q.png",
+        "Footer": "{server_network_name} | Made with <3"
+    },
+    "Active Giveaway IDs (DO NOT EDIT!)": [],
+    "Past Giveaway IDs (DO NOT EDIT!)": []
+}```
+`Giveaway Enabled` - set to false if you don't want it to be chosen during giveaway selection
+`Commands To Run` - A list of raw RCON console commands to be run when a player redeems the prize with the `/claim` command
