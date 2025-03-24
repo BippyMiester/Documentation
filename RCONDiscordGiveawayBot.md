@@ -2,7 +2,7 @@
 title: RCON Discord Giveaway Bot
 description: 
 published: true
-date: 2025-03-24T03:26:59.546Z
+date: 2025-03-24T03:29:44.597Z
 tags: 
 editor: markdown
 dateCreated: 2025-03-24T02:55:47.964Z
@@ -164,10 +164,21 @@ The reason it's `*.json` is because there can be an infinite number of combinati
 `Giveaway Length (Hours)` - How long the giveaway lasts in hours.
 
 #### The Choose Winners Process
+This final value will bias the winners of that giveaway to newer players or players with lower tickets.
 ```
 Randomizer: A number between 0.0 and 1.0.
 Weight: A weight factor. If -1, no bias is applied.
  - Weight > 1.0: Bias toward higher values.
  - 0.0 < Weight < 1.0: Bias toward lower values.
 ```
- 
+Players with lower tickets:
+`Randomizer`: `0.25`
+`Weight`: `0.5`
+
+Players with higher tickets:
+`Randomizer`: `0.8`
+`Weight`: `1.75`
+
+Completely Random:
+`Randomizer`: `0.5`
+`Weight`: `-1`
