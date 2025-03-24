@@ -2,7 +2,7 @@
 title: RCON Discord Giveaway Bot
 description: 
 published: true
-date: 2025-03-24T03:25:08.334Z
+date: 2025-03-24T03:25:29.577Z
 tags: 
 editor: markdown
 dateCreated: 2025-03-24T02:55:47.964Z
@@ -163,3 +163,6 @@ Randomizer: A number between 0.0 and 1.0.
 Weight: A weight factor. If -1, no bias is applied.
  - Weight > 1.0: Bias toward higher values.
  - 0.0 < Weight < 1.0: Bias toward lower values.
+ ```
+ 
+ 
