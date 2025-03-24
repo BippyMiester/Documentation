@@ -2,7 +2,7 @@
 title: RCON Discord Giveaway Bot
 description: 
 published: true
-date: 2025-03-24T03:29:44.597Z
+date: 2025-03-24T03:31:43.076Z
 tags: 
 editor: markdown
 dateCreated: 2025-03-24T02:55:47.964Z
@@ -162,6 +162,16 @@ The reason it's `*.json` is because there can be an infinite number of combinati
 `Commands To Run` - A list of raw RCON console commands to be run when a player redeems the prize with the `/claim` command
 
 `Giveaway Length (Hours)` - How long the giveaway lasts in hours.
+
+`Role To Tag On Start` - The Discord Role ID of the role that you want to tag when a giveaway starts.
+
+Embed `Conditions`: These are the bulleted points in the embed that you can see on the example images on the Codefling Product Page.
+
+No Touchy Touchy
+```
+"Active Giveaway IDs (DO NOT EDIT!)": [],
+"Past Giveaway IDs (DO NOT EDIT!)": []
+```
 
 #### The Choose Winners Process
 This final value will bias the winners of that giveaway to newer players or players with lower tickets.
