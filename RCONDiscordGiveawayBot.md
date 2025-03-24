@@ -2,7 +2,7 @@
 title: RCON Discord Giveaway Bot
 description: 
 published: true
-date: 2025-03-24T04:01:32.733Z
+date: 2025-03-24T07:22:11.134Z
 tags: 
 editor: markdown
 dateCreated: 2025-03-24T02:55:47.964Z
@@ -22,6 +22,44 @@ You are probably asking yourself, how? Well, the process is simple.
 6. Giveaway ends automatically, however this time, the player can then type /claim in discord and it will run a raw RCON command to that server.
 
 Sounds pretty good right? No more manually giving out VIP packages or Skill Tree XP or Economy Cash.
+
+## Installation Instructions
+
+Here are a few ways you can install the discord bot.
+
+### Vultr
+
+You can use my [Vultr Affiliate Link](https://www.vultr.com/?ref=7206663) and get a small VPS (Virtual Private Server) to host your bot. This is the most advanced way as you have to install python, and be familiar with the linux OS. If you know what you're doing, consider supporting me by using this affiliate link.
+
+### Host on a Panel
+
+This is probably the most common. You can find all sorts of different Python Discord Bot Hosts out there. Ranging from as little at $1.00/month to as high as $5/month.
+
+***Note:*** DO NOT use the free bot hosting options. Most of them want you to join with Discord, and if you look at the permissions that their Discord application wants, its an absolute security nightmare. 
+
+### Host with ME!
+
+Yep thats right, you can host your bot with me for $2.00/month. Invoices are through Paypal. Just open a ticket in my discord and I can set you up.
+
+### Run on a Windows or Linux machine
+
+Either OS you have to have python installed. You can find how to do that using the following documentation:
+
+[Windows Python Installation](https://www.python.org/downloads/)
+
+[Linux Python Installation](https://www.python.org/downloads/source/)
+
+[Windows Youtube Installation Video](https://www.youtube.com/watch?v=28eLP22SMTA)
+
+[Linux Youtube Installation Video](https://www.youtube.com/watch?v=IAco2SSuGms)
+
+Then you can run in either Windows or Linux the following command in a terminal
+
+```
+python3 DOWNLOAD_LOCATION/main.py
+```
+
+The download location will be called the "root directory" of the bot. So where ever the root directory is, whether thats in your Downloads folder or somewhere else, you have to just run that command plus the `main.py` to start the bot up.
 
 ## Definition of Directories
 
