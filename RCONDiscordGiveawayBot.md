@@ -2,7 +2,7 @@
 title: RCON Discord Giveaway Bot
 description: 
 published: true
-date: 2025-03-24T03:32:40.321Z
+date: 2025-03-24T03:36:39.259Z
 tags: 
 editor: markdown
 dateCreated: 2025-03-24T02:55:47.964Z
@@ -195,3 +195,19 @@ Players with higher tickets:
 Completely Random:
 `Randomizer`: `0.5`
 `Weight`: `-1`
+
+## `./servers/*.json`
+
+Just like the `./giveaways` you are able to have infinite servers here as well.
+```json
+{
+    "Server Enabled?": true,
+    "Server Name": "Tired Dad's Rust",
+    "Server IP": "127.0.0.1",
+    "RCON Port": 28118,
+    "RCON Password": "some password here",
+    "Seconds Between Tickets Given": 60,
+    "Number of Tickets Given Per Cycle": 0.5
+}
+```
+If you have questions about this pop in the discord. Things seem to be pretty easy to set up in this file.
