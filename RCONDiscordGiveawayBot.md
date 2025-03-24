@@ -2,7 +2,7 @@
 title: RCON Discord Giveaway Bot
 description: 
 published: true
-date: 2025-03-24T03:15:11.573Z
+date: 2025-03-24T03:25:08.334Z
 tags: 
 editor: markdown
 dateCreated: 2025-03-24T02:55:47.964Z
@@ -119,7 +119,9 @@ Set this to your testing discord's guild ID, or your main discord's guild id. Le
     ]
 }
 ```
-Alot of this is pretty self-explanitory as well. The `Weights` are pretty easy too, the higher the number the more chance of it being chosen, lower number lower chance. Easy right?
+The `Hours In Between Giveaways` can be a little deceiving. If I have a giveaway that is to be run every 48 hours, and I want to run the next giveaway 24 hours after that, then the `Hours In Between Giveaways` should be `72` and not `24`. I know thats confusing. Rewriting it will happen eventually but its an annoying rewrite so probably not soon TBH.
+
+The `Weights` are pretty easy too, the higher the number the more chance of it being chosen, lower number lower chance. The names inside each weights list are the same as the filenames in `./giveaway`, AKA `giveaway_id`'s. Easy right?
 ## `./giveaways/*.json`
 
 The reason it's `*.json` is because there can be an infinite number of combinations of giveaways you can put together. The file name is the `giveaway_id` for the `/giveaway start` command mentioned earlier.
@@ -153,3 +155,11 @@ The reason it's `*.json` is because there can be an infinite number of combinati
 }```
 `Giveaway Enabled` - set to false if you don't want it to be chosen during giveaway selection
 `Commands To Run` - A list of raw RCON console commands to be run when a player redeems the prize with the `/claim` command
+`Giveaway Length (Hours)` - How long the giveaway lasts in hours.
+
+#### The Choose Winners Process
+```
+Randomizer: A number between 0.0 and 1.0.
+Weight: A weight factor. If -1, no bias is applied.
+ - Weight > 1.0: Bias toward higher values.
+ - 0.0 < Weight < 1.0: Bias toward lower values.
