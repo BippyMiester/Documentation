@@ -2,7 +2,7 @@
 title: RCON Discord Giveaway Bot
 description: 
 published: true
-date: 2025-03-24T07:22:11.134Z
+date: 2025-03-24T07:23:39.500Z
 tags: 
 editor: markdown
 dateCreated: 2025-03-24T02:55:47.964Z
@@ -14,12 +14,12 @@ This bot is bound to blow your mind. The first of its kind, giveaways can now be
 
 You are probably asking yourself, how? Well, the process is simple.
 
-1. You connect your server to the bot via RCON
-2. Your players link their steam and discord accounts via Steamcord
+1. You connect your server to the bot via RCON in the settings
+2. Your players link their steam and discord accounts via [Steamcord](https://steamcord.io/)
 3. Your players just start playing and they get tickets for playing! No more plugin running on the server with a timer, taking up valuable resources!
-4. Define the giveaways with in the bot, and set how often they run.
+4. Define the giveaways within the bot, and set how often they run.
 5. Players then enter tickets into the giveaway
-6. Giveaway ends automatically, however this time, the player can then type /claim in discord and it will run a raw RCON command to that server.
+6. Giveaway ends automatically, however this time, the player can then type `/claim` in discord and it will run a raw RCON command to the server the player chooses. It will check that the player is online first.
 
 Sounds pretty good right? No more manually giving out VIP packages or Skill Tree XP or Economy Cash.
 
