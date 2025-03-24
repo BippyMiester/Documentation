@@ -2,7 +2,7 @@
 title: RCON Discord Giveaway Bot
 description: 
 published: true
-date: 2025-03-24T03:25:29.577Z
+date: 2025-03-24T03:25:48.179Z
 tags: 
 editor: markdown
 dateCreated: 2025-03-24T02:55:47.964Z
@@ -153,8 +153,11 @@ The reason it's `*.json` is because there can be an infinite number of combinati
     "Active Giveaway IDs (DO NOT EDIT!)": [],
     "Past Giveaway IDs (DO NOT EDIT!)": []
 }```
+
 `Giveaway Enabled` - set to false if you don't want it to be chosen during giveaway selection
+
 `Commands To Run` - A list of raw RCON console commands to be run when a player redeems the prize with the `/claim` command
+
 `Giveaway Length (Hours)` - How long the giveaway lasts in hours.
 
 #### The Choose Winners Process
@@ -163,6 +166,6 @@ Randomizer: A number between 0.0 and 1.0.
 Weight: A weight factor. If -1, no bias is applied.
  - Weight > 1.0: Bias toward higher values.
  - 0.0 < Weight < 1.0: Bias toward lower values.
- ```
+```
  
  
