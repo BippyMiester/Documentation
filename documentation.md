@@ -2,7 +2,7 @@
 title: Product Documentation
 description: All the documentation for the various products that BippyMiester has created, sold, or given away for free.
 published: true
-date: 2025-03-25T03:55:36.239Z
+date: 2025-03-25T03:59:55.853Z
 tags: codefling, products, product documentation
 editor: markdown
 dateCreated: 2025-03-22T08:00:20.781Z
@@ -12,7 +12,7 @@ dateCreated: 2025-03-22T08:00:20.781Z
 
 All of the products listed here are have been created by BippyMiester alone or in conjuction with others where specified. All files fall under the following [legal terms & policies](/legal).
 
-## [RCON Discord Giveaway Bot](/RCONDiscordGiveawayBot)
+## [RCON Discord Giveaway Bot](/documentation/RCONDiscordGiveawayBot)
 
 This bot is bound to blow your mind. The first of its kind, giveaways can now be automated through this Discord bot!
 
