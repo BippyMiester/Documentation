@@ -2,7 +2,7 @@
 title: End User License Agreement
 description: This is the End User License Agreement that customers agree to when purchasing a product from BippyMiester on Codefling.com or other various platforms.
 published: true
-date: 2025-03-25T03:48:01.268Z
+date: 2025-03-25T04:00:50.737Z
 tags: legal, eula, end user license agreement, terms & policies
 editor: markdown
 dateCreated: 2025-03-25T03:48:01.268Z
